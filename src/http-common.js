@@ -1,0 +1,11 @@
+import axios from "axios";
+
+var token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWI2YjRjZTM0N2E4YzFjNDA4MzM3ODMxZDNmNGNlZGJlMzUwMWQwMDVkZTBhNWI5YzgxMWMxNjE4ODVhMDMzZGE1YjRlOTAwOGE2YTRmNjgiLCJpYXQiOjE2MDIwNjc5MzAsIm5iZiI6MTYwMjA2NzkzMCwiZXhwIjoxNjMzNjAzOTMwLCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.LoFt5WdZL-eW22b3YRLRSrpI0OSQAehlfgHB3MKMaBPI_yMSm5s28ojczGW8Q9j97_AK1sV4zxaB3Wi8zZHzr1G7W0F_Wwc_ppyDvg0B9H5wcyJeGL2KegbPiY4Pjf6KXLC8XTdac1IIJk3SiH_1t-zSsizcxWOJpygEJvMspM9EsLOrXR9QSE_ayvab9utoooX0fKymZlR2sU7jlmZddDejujXU_-jszOaXhywIqviNUNEtp2rHxNBM1VOojptpY4sIiji0DADgVJN4pvUkGz7M3YgMK09C7KWa3-e6sLZ7Hj-iymMebh0V-oHvQl_hTZhS4nzatDOPInTt7AfI7FgdjD8dmFKAJPNMlH_228vDstK4mqOFyzbEv2VUy2GHoLtN7dYXdPWStlq0cZnohX7jZ6SEjf4FTQUis2opMbX9LbVCKBgpjs8H8wJQuGuwg8EnHI0lBO2J_-bBC2viBHXk5fMKtiaRJeNnxgXd66Jo4vDplHMGjAlZWdcmrYa-kASplT5cFsofUrXWLj7ux1sHuWGoaxc-VrunXPeKNfsMYK14s1aGS6n40nT-dnenOBBhAMA-_EqUbhNlm1uIgczHRhg4ZZy1lVFsY2xuSYsNNJA5mLOILpdsZC0uijDRPEV986BlrBXBfltshw-PyAkuG-9MMUi51k1eGSHFZSA';
+export default axios.create({
+  baseURL: "http://127.0.0.1:8000/api",
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+    "Content-type": "application/json",
+    'Authorization': `Bearer ${token}`,
+  }
+});
